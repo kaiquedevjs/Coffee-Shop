@@ -2,4 +2,150 @@
   --font1: "Inter", sans-serif;
   --font2: "Cormorant Garamond", sans-serif;
   --font3: "Reenie Beanie", sans-serif;
+  --primary-color: #5a4a3a;
+  --secondary-color: #8b6f47;
+  --third-color: #6b5d4f;
+
+  --primary-back: #e8ded0;
+  --secondary-back: #eae0d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--primary-color, #5a4a3a);
+  font-family: var(--font1);
+  transition: 0.3s;
+}
+
+nav ul a:hover {
+  opacity: 0.7;
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+}
+
+.home-left,
+.home-right {
+  width: 50%;
+  padding: 10px 30px;
+}
+
+.home-left {
+  background-color: #f5efe7;
+}
+
+.text-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+}
+
+.home-left h1 {
+  font-size: 5rem;
+  color: var(--primary-color, #5a4a3a);
+  font-family: var(--font2);
+}
+
+.home-left h2 {
+  font-size: 4.5rem;
+  color: var(--primary-color, #5a4a3a);
+  font-family: var(--font3, sans-serif);
+  letter-spacing: 10px;
+}
+
+.home-left p {
+  color: var(--secondary-color, #8b6f47);
+  width: 60%;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  font-family: var(--font1, sans-serif);
+}
+
+.home-left button {
+  display: block;
+  width: fit-content;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-family: var(--font1, sans-serif);
+  color: var(--secondary-color, #8b6f47);
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 2px solid var(--primary-color, #5a4a3a);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 30px;
+}
+
+.home-left button:hover {
+  background-color: var(--secondary-color, #8b6f47);
+  color: white;
+  border-color: var(--secondary-color, #8b6f47);
+}
+
+.home-left .time {
+  color: #9c8a7a;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.home-left .time .bar {
+  color: grey;
+  margin-inline: 25px;
+  vertical-align: center;
+}
+
+.home-right {
+  background-color: #e0d4c7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home-right .fresh {
+  position: absolute;
+  bottom: 5%;
+  right: 8%;
+  transform: rotate(-5deg);
+  color: var(--secondary-color, #8b6f47);
+  font-size: 4.5rem;
+  font-family: var(--font3, sans-serif);
+  opacity: 0.5;
+}
+
+.home-right .leaf-1 {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+
+.home-right .leaf-2 {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
 }
