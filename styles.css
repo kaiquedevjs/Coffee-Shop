@@ -8,6 +8,7 @@
 
   --primary-back: #e8ded0;
   --secondary-back: #eae0d3;
+  --third-back: #f5efe7;
 }
 
 * {
@@ -197,9 +198,9 @@ nav ul a:hover {
 /* Finalizado a Seção Sobre */
 
 #menu {
-  background-color: var(--primary-back);
+  background-color: var(--third-back);
   text-align: center;
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 #menu .options {
@@ -248,4 +249,41 @@ nav ul a:hover {
   color: var(--secondary-color);
   font-family: var(--font2);
   margin: 0;
+}
+
+/* Finalizado Seção do cardapio */
+
+#reasons {
+  text-align: center;
+  background-color: var(--primary-back);
+  padding: 50px 0;
+}
+
+#reasons .reasons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.reasons-container .reason img {
+  border: 1px dashed #bdbdbd;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.reasons-container .reason h3 {
+  margin: 15px 0;
+  color: var(--primary-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: var(--font2);
+}
+
+.reasons-container .reason p {
+  color: var(--third-color);
+  font-size: 1rem;
+  font-family: var(--font1);
+  line-height: 30px;
 }
