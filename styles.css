@@ -6,7 +6,7 @@
   --secondary-color: #8b6f47;
   --third-color: #6b5d4f;
 
-  --primary-back: #e8ded0;
+  --primary-back: #ece4d8;
   --secondary-back: #eae0d3;
   --third-back: #f5efe7;
 }
@@ -62,7 +62,7 @@ nav ul a:hover {
 
 .home {
   display: flex;
-  height: 100vh;
+  height: 90vh;
 }
 
 .home-left,
@@ -286,4 +286,20 @@ nav ul a:hover {
   font-size: 1rem;
   font-family: var(--font1);
   line-height: 30px;
+}
+
+#gallery {
+  text-align: center;
+  background-color: var(--primary-back);
+  padding-top: 40px;
+}
+
+#gallery .gallery-images {
+  column-count: 4;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.gallery-images img {
+  width: 80%;
 }
