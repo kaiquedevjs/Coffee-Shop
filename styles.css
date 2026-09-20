@@ -15,6 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -175,7 +176,8 @@ nav ul a:hover {
   justify-content: center;
   align-items: center;
   gap: 80px;
-  background-color: var(--primary-back);
+  background-color: var(--third-back);
+  padding: 20px;
 }
 
 #about .about-left {
@@ -185,6 +187,8 @@ nav ul a:hover {
 .about-left p {
   color: var(--third-color);
   margin-bottom: 20px;
+  line-height: 1.7;
+  font-family: var(--font1);
 }
 
 .about-left img {
@@ -261,10 +265,14 @@ nav ul a:hover {
 
 #reasons .reasons-container {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 50px;
   margin-top: 30px;
+}
+
+#reasons .reasons-container .reason {
+  padding: 20px;
 }
 
 .reasons-container .reason img {
@@ -464,4 +472,104 @@ nav ul a:hover {
 .footer-bottom div {
   display: flex;
   gap: 10px;
+}
+
+@media (max-width: 1070px) {
+  .home {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .home .home-left,
+  .home .home-right {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .home-right .fresh {
+    font-size: 3rem;
+  }
+
+  #about {
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+  }
+
+  #about .about-left,
+  #about .about-right {
+    width: 90%;
+  }
+
+  #about .about-right {
+    text-align: center;
+  }
+
+  #about .about-right img {
+    height: 80%;
+    width: 100%;
+  }
+
+  #menu .options {
+    grid-template-columns: repeat(2, minmax(min-content, 350px));
+  }
+
+  #reasons .reasons-container {
+    width: 80%;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  #reasons .reasons-container .reason {
+    padding: 0;
+  }
+
+  #gallery .gallery-images {
+    column-count: 2;
+    width: 70%;
+  }
+
+  #visit .visit-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #visit .visit-image {
+    margin: 0 auto;
+  }
+
+  #visit .visit-image img {
+    width: 100%;
+  }
+
+  #footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "left left" "middle right";
+    gap: 20px;
+  }
+
+  #footer .footer-container .cont-left {
+    grid-area: left;
+    margin-bottom: 10px;
+  }
+
+  #footer .footer-container .cont-middle {
+    grid-area: middle;
+  }
+
+  #footer .footer-container .cont-right {
+    grid-area: right;
+  }
+}
+
+@media (max-width: 750px) {
+  #menu .options {
+    grid-template-columns: repeat(1, minmax(min-content, 350px));
+  }
+
+  #gallery .gallery-images {
+    width: 85%;
+  }
 }
