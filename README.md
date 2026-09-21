@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="favicon.svg" alt="Logo da Cafeteria Artesanal" width="96" height="96">
+<img src="assets/images/favicon.svg" alt="Logo da Cafeteria Artesanal" width="96" height="96">
 
 # Cafeteria Artesanal
 
