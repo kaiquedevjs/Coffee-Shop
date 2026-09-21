@@ -3,7 +3,7 @@
   --font2: "Cormorant Garamond", sans-serif;
   --font3: "Reenie Beanie", sans-serif;
   --primary-color: #5a4a3a;
-  --secondary-color: #8b6f47;
+  --secondary-color: #6f5433;
   --third-color: #6b5d4f;
 
   --primary-back: #ece4d8;
@@ -22,6 +22,11 @@ p {
   color: var(--secondary-color, #8b6f47);
   font-size: 1.2rem;
   font-family: var(--font1, sans-serif);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 h2 {
